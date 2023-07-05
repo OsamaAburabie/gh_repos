@@ -8,10 +8,7 @@ const BottomTabsStack = () => {
   const {Navigator, Screen} =
     createBottomTabNavigator<BottomTabsStackParamList>();
   return (
-    <Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
+    <Navigator>
       <Screen name="Repositories" component={Repositories} />
       <Screen name="Profile" component={Profile} />
     </Navigator>
